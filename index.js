@@ -11,7 +11,7 @@ http.createServer(function (request, response) {
     request.addListener('end', function () {
         file.serve(request, response);
     }).resume();
-}).listen(80);
+}).listen(process.env.PORT || 5000);
 
 const bot = new Telegraf(process.env.BOT_TOKEN)
 bot.use((new LocalSession({ database: 'db.json' })).middleware())
