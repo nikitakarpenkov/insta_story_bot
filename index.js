@@ -2,6 +2,16 @@ const
 	Telegraf = require('telegraf')
 	fs = require('fs')
 	LocalSession = require('telegraf-session-local')
+	http = require('http')
+	static = require('node-static')
+
+const file = new static.Server('./public');
+
+http.createServer(function (request, response) {
+    request.addListener('end', function () {
+        file.serve(request, response);
+    }).resume();
+}).listen(80);
 
 const bot = new Telegraf(process.env.BOT_TOKEN)
 bot.use((new LocalSession({ database: 'db.json' })).middleware())
