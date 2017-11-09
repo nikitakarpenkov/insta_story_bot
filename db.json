@@ -1,0 +1,26 @@
+{
+  "sessions": [
+    {
+      "id": "217156014:217156014",
+      "data": {
+        "photos": [
+          {
+            "file_id": "AgADAgADl6gxG6nNKEgtsosCamfZzqsQSw0ABOdVVulXop438qsRAAEC",
+            "file_size": 27272,
+            "file_path": "photos/file_11.jpg",
+            "width": 512,
+            "height": 512
+          }
+        ],
+        "user": {
+          "id": 217156014,
+          "is_bot": false,
+          "first_name": "Nikita",
+          "last_name": "Karpenkov",
+          "username": "nikitakarpenkov",
+          "language_code": "en-UA"
+        }
+      }
+    }
+  ]
+}
